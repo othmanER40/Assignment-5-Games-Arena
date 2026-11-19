@@ -234,3 +234,54 @@ margin: 0;    padding-top: 65px;
 .game-card:hover .game-img {
     transform: scale(1.05);
 }
+
+.service-card {
+    border-color: #303b48 !important;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Green border on hover */
+.service-card:hover {
+    border-color: #b5ff00 !important;
+}
+
+/* Icon transition */
+.service-icon {
+    transition: all 0.3s ease;
+}
+
+/* Icon background on hover */
+.service-card:hover .service-icon {
+    background-color: #b5ff00 !important;
+}
+
+/* Triangle common styles */
+.corner {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Top left triangle */
+.top-left {
+    top: 15px;
+    left: 15px;
+    border-top: 25px solid #b5ff00;
+    border-right: 25px solid transparent;
+}
+
+/* Bottom right triangle */
+.bottom-right {
+    bottom: 15px;
+    right: 15px;
+    border-bottom: 25px solid #b5ff00;
+    border-left: 25px solid transparent;
+}
+
+/* Show triangles on hover */
+.service-card:hover .corner {
+    opacity: 1;
+}
