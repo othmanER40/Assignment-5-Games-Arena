@@ -198,3 +198,39 @@ margin: 0;    padding-top: 65px;
     background-color: #c6ff00;
     color: black;
 }
+
+
+.game-card {
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.game-img {
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s ease;
+}
+
+.game-overlay {
+    opacity: 0;
+    background: linear-gradient(
+        to top,
+        rgba(180, 255, 0, 0.8),
+        rgba(0, 0, 0, 0.1)
+    );
+    transition: 0.4s ease;
+}
+
+.game-card:hover {
+    border-color: #b5ff00;
+}
+
+.game-card:hover .game-overlay {
+    opacity: 1;
+}
+
+.game-card:hover .game-img {
+    transform: scale(1.05);
+}
