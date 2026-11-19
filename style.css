@@ -1,0 +1,57 @@
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-icon {
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.sign-in-btn {
+    background-color: #c6ff00;
+    color: black;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: inherit;
+}
+
+.sign-in-btn:hover {
+    background-color: #a8d900;
+    color: black;
+}
+.nav-icon {
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.nav-icon:hover {
+    color: #c6ff00;
+    transform: translateY(-3px);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #c6ff00 !important;
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.logo i {
+    font-size: 28px;
+}
+
+.logo:hover {
+    color: #c6ff00 !important;
+}
+.nav-link{color: white !important;}
+.active{color: #a8d900 !important;}
