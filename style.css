@@ -1,3 +1,15 @@
+body{    font-family: "Chakra Petch", sans-serif;
+margin: 0;    padding-top: 65px;
+}
+::selection {
+    background: #c6ff00;
+    color: black;
+}
+
+::-moz-selection {
+    background: #c6ff00;
+    color: black;
+}
 .nav-right {
   display: flex;
   align-items: center;
