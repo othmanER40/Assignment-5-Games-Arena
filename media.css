@@ -44,4 +44,15 @@
     .hero-buttons .btn {
         width: 100%;
     }
+    .nav-right{display: none !important;}
+    .players-card {
+    position: absolute;
+    z-index: 10;
+    bottom: -30px;
+    left: -22px;
+    background-color: #0B0E11;
+    border: 1px solid #263342;
+    border-radius: 12px;
+
+}
 }
