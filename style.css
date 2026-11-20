@@ -1,14 +1,16 @@
-body{    font-family: "Chakra Petch", sans-serif;
-margin: 0;    padding-top: 65px;
+body {
+  font-family: "Chakra Petch", sans-serif;
+  margin: 0;
+  padding-top: 65px;
 }
 ::selection {
-    background: #c6ff00;
-    color: black;
+  background: #c6ff00;
+  color: black;
 }
 
 ::-moz-selection {
-    background: #c6ff00;
-    color: black;
+  background: #c6ff00;
+  color: black;
 }
 .nav-right {
   display: flex;
@@ -92,307 +94,411 @@ margin: 0;    padding-top: 65px;
   position: relative;
 }
 .players-card {
-    position: absolute;
-    z-index: 10;
-    bottom: -30px;
-    left: -30px;
-    background-color: #0B0E11;
-    border: 1px solid #263342;
-    border-radius: 12px;
-
+  position: absolute;
+  z-index: 10;
+  bottom: -30px;
+  left: -30px;
+  background-color: #0b0e11;
+  border: 1px solid #263342;
+  border-radius: 12px;
 }
 .players-card i {
-    color: #C6FF00;
+  color: #c6ff00;
 }
 
 .players-card span {
-    color: #929BAA;
+  color: #929baa;
 }
 
 .players-card h3 {
-    color: #F5F5F5;
+  color: #f5f5f5;
 }
 .hero-img-wrapper {
-    position: relative;
+  position: relative;
 }
 .hero-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* Hero Content */
 .hero-content {
-    color: white;
+  color: white;
 }
 
 /* Heading */
 .hero-content h1 {
-    font-family: 'Russo One', sans-serif;
-    font-size: clamp(40px, 5vw, 76px);
-    font-weight: 400;
-    line-height: 1.2;
-    margin-bottom: 35px;
-    color: #f5f5f5;
+  font-family: "Russo One", sans-serif;
+  font-size: clamp(40px, 5vw, 76px);
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 35px;
+  color: #f5f5f5;
 }
 
 .hero-content h1 span {
-    display: block;
-    color: #c6ff00;
-    margin: 15px 0;
+  display: block;
+  color: #c6ff00;
+  margin: 15px 0;
 }
 
 /* Description */
 .hero-content p {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 21px;
-    font-weight: 600;
-    line-height: 1.55;
-    color: #c4c4c4;
-    max-width: 700px;
-    margin-bottom: 40px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.55;
+  color: #c4c4c4;
+  max-width: 700px;
+  margin-bottom: 40px;
 }
 
 /* Buttons Container */
 .hero-buttons {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 /* Primary Button */
 .hero-buttons .btn-primary {
-    background-color: #c6ff00;
-    color: #080a0d;
-    border: 2px solid #c6ff00;
-    border-radius: 12px;
-    padding: 20px 38px;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    transition: 0.3s;
+  background-color: #c6ff00;
+  color: #080a0d;
+  border: 2px solid #c6ff00;
+  border-radius: 12px;
+  padding: 20px 38px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.3s;
 }
 
 .hero-buttons .btn-primary:hover {
-    background-color: #a8d900;
-    border-color: #a8d900;
-    color: black;
+  background-color: #a8d900;
+  border-color: #a8d900;
+  color: black;
 }
 
 /* Outline Button */
 .hero-buttons .btn-outline-custom {
-    background-color: transparent;
-    color: #c6ff00;
-    border: 2px solid #c6ff00;
-    border-radius: 12px;
-    padding: 20px 38px;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    transition: 0.3s;
+  background-color: transparent;
+  color: #c6ff00;
+  border: 2px solid #c6ff00;
+  border-radius: 12px;
+  padding: 20px 38px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.3s;
 }
 
 .hero-buttons .btn-outline-custom:hover {
-    background-color: #c6ff00;
-    color: black;
+  background-color: #c6ff00;
+  color: black;
 }
 
-
 .game-card {
-    border: 2px solid transparent;
-    cursor: pointer;
-    transition: 0.3s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .game-img {
-    height: 260px;
-    object-fit: cover;
-    display: block;
-    transition: 0.4s ease;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+  transition: 0.4s ease;
 }
 
 .game-overlay {
-    opacity: 0;
-    background: linear-gradient(
-        to top,
-        rgba(180, 255, 0, 0.8),
-        rgba(0, 0, 0, 0.1)
-    );
-    transition: 0.4s ease;
+  opacity: 0;
+  background: linear-gradient(
+    to top,
+    rgba(180, 255, 0, 0.8),
+    rgba(0, 0, 0, 0.1)
+  );
+  transition: 0.4s ease;
 }
 
 .game-card:hover {
-    border-color: #b5ff00;
+  border-color: #b5ff00;
 }
 
 .game-card:hover .game-overlay {
-    opacity: 1;
+  opacity: 1;
 }
 
 .game-card:hover .game-img {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .service-card {
-    border-color: #303b48 !important;
-    transition: all 0.3s ease;
-    cursor: pointer;
+  border-color: #303b48 !important;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 /* Green border on hover */
 .service-card:hover {
-    border-color: #b5ff00 !important;
+  border-color: #b5ff00 !important;
 }
 
 /* Icon transition */
 .service-icon {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 /* Icon background on hover */
 .service-card:hover .service-icon {
-    background-color: #b5ff00 !important;
+  background-color: #b5ff00 !important;
 }
 
 /* Triangle common styles */
 .corner {
-    position: absolute;
-    width: 0;
-    height: 0;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 /* Top left triangle */
 .top-left {
-    top: 15px;
-    left: 15px;
-    border-top: 25px solid #b5ff00;
-    border-right: 25px solid transparent;
+  top: 15px;
+  left: 15px;
+  border-top: 25px solid #b5ff00;
+  border-right: 25px solid transparent;
 }
 
 /* Bottom right triangle */
 .bottom-right {
-    bottom: 15px;
-    right: 15px;
-    border-bottom: 25px solid #b5ff00;
-    border-left: 25px solid transparent;
+  bottom: 15px;
+  right: 15px;
+  border-bottom: 25px solid #b5ff00;
+  border-left: 25px solid transparent;
 }
 
 /* Show triangles on hover */
 .service-card:hover .corner {
-    opacity: 1;
+  opacity: 1;
 }
 /* Icon transition */
 .service-icon,
 .service-icon i {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 /* Change icon background */
 .service-card:hover .service-icon {
-    background-color: #b5ff00 !important;
+  background-color: #b5ff00 !important;
 }
 
 /* Change icon color */
 .service-card:hover .service-icon i {
-    color: #000 !important;
+  color: #000 !important;
 }
 
 .teams-section {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 /* Slider Container */
 .logo-slider {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 
 /* Logos Track */
 .logo-track {
-    display: flex;
-    width: max-content;
-    gap: 16px;
+  display: flex;
+  width: max-content;
+  gap: 16px;
 }
 
 /* Logo Images */
 .logo-track img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    border-radius: 12px;
-    flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 12px;
+  flex-shrink: 0;
 }
 
 /* Top Row: Left */
 .logo-track.left {
-    animation: moveLeft 30s linear infinite;
+  animation: moveLeft 30s linear infinite;
 }
 
 /* Bottom Row: Right */
 .logo-track.right {
-    animation: moveRight 30s linear infinite;
+  animation: moveRight 30s linear infinite;
 }
 
 /* Animations */
 @keyframes moveLeft {
-    from {
-        transform: translateX(0);
-    }
+  from {
+    transform: translateX(0);
+  }
 
-    to {
-        transform: translateX(-50%);
-    }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes moveRight {
-    from {
-        transform: translateX(-50%);
-    }
+  from {
+    transform: translateX(-50%);
+  }
 
-    to {
-        transform: translateX(0);
-    }
+  to {
+    transform: translateX(0);
+  }
 }
 
 /* Pause when hovering */
 .logo-slider:hover .logo-track {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 .teams-section {
-    position: relative;
-    overflow: hidden;
-    background-color: #0b0e13;
+  position: relative;
+  overflow: hidden;
+  background-color: #0b0e13;
 }
 
 .teams-section::before {
-    content: "";
-    position: absolute;
+  content: "";
+  position: absolute;
 
-    width: 50%;
-    height: 250px;
+  width: 50%;
+  height: 250px;
 
-    background: radial-gradient(
-        ellipse,
-        rgba(217, 255, 81, 0.663),
-        transparent 90%
-    );
+  background: radial-gradient(
+    ellipse,
+    rgba(217, 255, 81, 0.663),
+    transparent 90%
+  );
 
-    filter: blur(50px);
+  filter: blur(50px);
 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-    pointer-events: none;
-    z-index: 0;
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* Keep logos above the glow */
 .teams-section .logo-slider {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
+}
+.team-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.team-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-info {
+  position: absolute;
+  bottom: 15px;
+  left: 12px;
+  z-index: 2;
+  color: white;
+}
+
+.team-info h5 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.team-info p {
+  font-size: 11px;
+  margin-bottom: 2px;
+}
+
+.team-info small {
+  font-size: 9px;
+  color: #aaa;
+}
+
+.team-nickname {
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  z-index: 2;
+  
+}
+
+.team-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent 40%, rgba(0, 0, 0, 0.9));
+}
+
+.team-card::after {
+  content: "";
+  position: absolute;
+  background: rgba(146, 155, 170, 0.444);
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+.team-card:hover.team-card::after {
+  transform: translate(150%, 150%);
+}
+#our-team {
+  background-color: #212529;
+}
+
+.team-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #b5ff00;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.team-label span {
+  width: 35px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #b5ff00);
+}
+
+.team-title {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: clamp(30px, 4vw, 48px);
+  font-weight: 700;
+  color: #f5f5f5;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+}
+
+.team-description {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #929baa;
+  letter-spacing: 0.3px;
 }
