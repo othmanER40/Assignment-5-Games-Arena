@@ -1,58 +1,59 @@
 @media (max-width: 991px) {
-    .hero-section {
-        padding: 60px 0;
-        min-height: auto;
-    }
+  .hero-section {
+    padding: 60px 0;
+    min-height: auto;
+  }
 }
 
 @media (max-width: 576px) {
-    .hero-section {
-        padding: 45px 0 70px;
-    }
+  .hero-section {
+    padding: 45px 0 70px;
+  }
 }
 /* Tablet */
 @media (max-width: 991px) {
-    .hero-content {
-        text-align: center;
-    }
+  .hero-content {
+    text-align: center;
+  }
 
-    .hero-content p {
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .hero-buttons {
-        justify-content: center;
-    }
+  .hero-buttons {
+    justify-content: center;
+  }
 }
 
 /* Mobile */
 @media (max-width: 576px) {
-    .hero-content h1 {
-        font-size: 38px;
-        line-height: 1.25;
-    }
+  .hero-content h1 {
+    font-size: 38px;
+    line-height: 1.25;
+  }
 
-    .hero-content p {
-        font-size: 17px;
-    }
+  .hero-content p {
+    font-size: 17px;
+  }
 
-    .hero-buttons {
-        flex-direction: column;
-    }
+  .hero-buttons {
+    flex-direction: column;
+  }
 
-    .hero-buttons .btn {
-        width: 100%;
-    }
-    .nav-right{display: none !important;}
-    .players-card {
+  .hero-buttons .btn {
+    width: 100%;
+  }
+  .nav-right {
+    display: none !important;
+  }
+  .players-card {
     position: absolute;
     z-index: 10;
     bottom: -30px;
     left: -22px;
-    background-color: #0B0E11;
+    background-color: #0b0e11;
     border: 1px solid #263342;
     border-radius: 12px;
-
-}
+  }
 }
